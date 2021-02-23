@@ -1,0 +1,83 @@
+
+Static Keyword:
+
+	It refers to the common properties of all objects. 
+	It can be applied with variables, blocks, class and methods.
+
+
+
+-----------------------------------------------------------------	
+
+Final Keyword
+
+	- Can be used with Variable, Method and Class.
+
+Final Variable: Final Variable means the value can't be modified in future.
+
+
+
+-----------------------------------
+
+Blank Final Variable: Blank Final Variable is not initialize at the time of declaration. It can be intialize only in constructor.
+
+Static Blank Final Variable: Static Blank Final Variable can be initialize in static block only.
+
+Final Method: Final Method can't be overridden in child class.
+
+Final Class: If you declare any class final, no other class can extend it.
+	
+	
+----------------------------------------------------------------	
+
+Constructor Chaining
+
+----------------------------------------------------------------
+
+Abstract Classes
+Interfaces
+Exception Handling
+
+------------------------------------------------------------------
+
+Polymorphism:
+
+	Poly means Many and morpho means Forms.
+	
+	"One Interface Many Functions"
+	
+	Two Concepts to achieve polymorphism:
+		
+		Overloading: Multiple Functions with Same Name but different parameters or signatures in same Class.
+		
+		Overridding: Function with Name and Same parameters or signatures in multiple class by Inheritance.
+
+-----------------------------------
+
+Overloading: Multiple Methods in Same class with different method signatures:
+
+	Three Different Signatures:
+		- Number of Parameters
+		- Type of Parameters
+		- Sequence of Parameters
+
+-----------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+
+Object Oriented Programming using Java:
+
+	The key feature of OOPS is Data Hiding.
+
+	In real time, every thing is object.
+	
+	Components:
+	
+		Classes
+		Objects
+		Encapsulation
+		Abstraction
+		Inheritance
+		Polymorphism
+		
+---------------------------------------------------------------
+
+	Class is a collection of data members(variables) and member functions(method).
+	
+	Object is a representater of a class that helps in accessings the members.
+	Object is also known as part of class(Instance of a class).
+	When we create an object of a class, memory gets allocated to data members.
+	And Member Functions gets memory when they are called/Invoked.
+	
+	
+----------------------------------------------------------------	
+	
+	Constructor:
+	
+	A special method used to initialize the data members.
+	They have same name as that of class name.
+	THey don't have any return type.
+	We use them only for initialization Purpose.
+	Constructors are called implcitly.
+	
+	Every class inherits the Object class by default.
+	If we do not have any constructor, the default constructor to assign default values gets called from Object class.
+	
+	Types of Constructor:
+	
+		Default Constructor (Non-Parameterized Constructor)	
+		Parameterized Constructor
+	
+	
+-----------------------------------------------------------------	
+	
+	Access Modifiers: 
+	
+	
+		They helps in Encapsulation and Abstraction.
+		
+		Encapsulation: This is the technique used to access restriction to class members and methods. A class is by default encapsulated always.
+		
+		Abstraction: A concept to abstract the hidden members and methods of a particualr class.
+		
+		Four Access Modifiers in Java:
+		
+			- Default: 
+			
+				Every member is by default 'Default'.
+				Default Members are accessible from anywhere within the package.
+				
+			- Public
+			
+				Public members are accessible from anywhere.
+				Within the class, 
+				outside the class, 
+				within the package and 
+				outside the package
+				
+			
+			- Private
+			
+				Private members are accessible within the class only.
+			
+			- Protected
+			
+				Protected members are accessible from child class.
+	
+	
