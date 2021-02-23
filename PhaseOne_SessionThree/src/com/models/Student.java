@@ -1,12 +1,18 @@
-package inheritancedemo;
+package com.models;
 
 import java.util.Scanner;
 
 public class Student {
 
-	int studentId;
-	String studentName;
-
+	private int studentId;
+	private String studentName;
+	public static String universityName;
+	Scanner scan = new Scanner(System.in);
+	// Static Block to Initialize Static Variables
+	static {
+		Student.universityName = "BVU";
+	}
+	
 	public Student() {
 		this.studentId = 101;
 		this.studentName = "Unknown";
@@ -17,24 +23,23 @@ public class Student {
 		this.studentName = studentName;
 	}
 
-	public int getStudentId() {
+	protected int getStudentId() {
 		return studentId;
 	}
 
-	public void setStudentId(int studentId) {
+	protected void setStudentId(int studentId) {
 		this.studentId = studentId;
 	}
 
-	public String getStudentName() {
+	protected String getStudentName() {
 		return studentName;
 	}
 
-	public void setStudentName(String studentName) {
+	protected void setStudentName(String studentName) {
 		this.studentName = studentName;
 	}
 
-	void acceptDetails() {
-		Scanner scan = new Scanner(System.in);
+	void acceptDetails() {		
 		System.out.print("Enter Your Name : ");
 		this.setStudentName(scan.nextLine());
 		System.out.print("Enter Your Id : ");
@@ -43,6 +48,7 @@ public class Student {
 
 	void displayDetails() {
 	System.out.println("Student Id : " + this.getStudentId());
-	System.out.println("Student Name : " + this.getStudentName());	
+	System.out.println("Student Name : " + this.getStudentName());
+	System.out.println("University Name : " + Student.universityName);
 	}
 }

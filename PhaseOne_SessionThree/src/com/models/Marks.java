@@ -1,11 +1,9 @@
-package inheritancedemo;
+package com.models;
 
-import java.util.Scanner;
+class Marks extends Student {
 
-public class Marks extends Student {
-
-	int objectiveMarks;
-	int subjectiveMarks;
+	private int objectiveMarks;
+	private int subjectiveMarks;
 
 	public Marks() {
 		this.objectiveMarks = 0;
@@ -17,25 +15,24 @@ public class Marks extends Student {
 		this.subjectiveMarks = subjectiveMarks;
 	}
 
-	public int getObjectiveMarks() {
+	protected int getObjectiveMarks() {
 		return objectiveMarks;
 	}
 
-	public void setObjectiveMarks(int objectiveMarks) {
+	protected void setObjectiveMarks(int objectiveMarks) {
 		this.objectiveMarks = objectiveMarks;
 	}
 
-	public int getSubjectiveMarks() {
+	protected int getSubjectiveMarks() {
 		return subjectiveMarks;
 	}
 
-	public void setSubjectiveMarks(int subjectiveMarks) {
+	protected void setSubjectiveMarks(int subjectiveMarks) {
 		this.subjectiveMarks = subjectiveMarks;
 	}
 
 	void acceptDetails() {
 		super.acceptDetails();
-		Scanner scan = new Scanner(System.in);
 		System.out.print("Enter Objective Marks : ");
 		this.setObjectiveMarks(scan.nextInt());
 		System.out.print("Enter Subjective Marks : ");
