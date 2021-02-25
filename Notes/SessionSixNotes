@@ -1,0 +1,80 @@
+
+Exception Handling
+Serialization and Deserialization
+File I/O
+Multithreading
+
+------------------------------------------
+
+Types of Errors:
+	1. Compile-Time Errors
+		a. Syntacatical Errors
+			Ommit the semicolon or curly braces,
+			Mis-spelled Keywords and so on.
+		b. Sementic Errors (Expressional Errors)
+			c = a + b; => a + b = c
+			a +=b => a =+ b
+	2. Run-Time Errors
+		Run-Time Errors are also known as Exceptions.
+		To handle Run-Time Exception, we use Exception Handling Mechanism.
+		It is an abnormal termination of a program due to unexpected input or certain software and hardware faults.
+	3. Logical Errors
+		We don't get expected output:
+		if(num/2==0)
+			sysout('even')
+		else
+			sysout('odd')
+			
+----------------------------------------
+
+Throwable:
+
+	1. getMessage():
+	2. getCause():
+	3. toString():
+	4. printStackTrace():
+	
+----------------------------------------
+
+Exception Handling Techniques:
+
+	try block: We write a set of statements in which chances of getting exception are high.
+	
+	catch block: followed by try to give error message or specific error prompts to user and handle them wisely.
+	
+	finally block: This is the block either followed by try or catch. This block gets always execute.
+	
+	throw and throws statement:
+	
+-----------------------------------------
+
+	Accept the cost price and selling price of an article from end user.
+	If cost price or selling price is less than 0 throws an Exception NegativePriceException.
+
+
+----------------------------------------------------------------------
+
+Java IO:
+
+	java.io package to work with text, streams, data and file system.
+	
+Serialization and Deserialization:
+
+	Serialization is the process of writing an object state into the file.
+	
+	Deserialization is the process of reading an object state from the file.
+	
+	Objects written into file using Serialization and Deserialization process are encryped, and can't read of write manually by accessing file system.
+
+
+
+
+
+
+
+
+
+
+
+
+	
