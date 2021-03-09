@@ -1,5 +1,7 @@
 package linked_list_demos;
 
+import java.util.NoSuchElementException;
+
 class LinkedList {
 	// Creating Node as Private Class to use in LinkedList Class
 	private class Node {
@@ -64,8 +66,52 @@ class LinkedList {
 	// If contains return true otherwise return false
 	
 	// Remove First Element from LinkedList
+	public void removeFirst() {
+		if(isEmpty()) {
+			throw new NoSuchElementException();
+		} if(first == last) {
+			first = last = null;
+		} else {
+			var second = first.next;
+			first.next = null;
+			first = second;
+		}
+	}
+	
+	private Node getPrevious(Node node) {
+		var current = first;
+		while(current!= null) {
+			if(current.next == node)
+				return current;
+			current = current.next;
+		}
+		return null;
+	}
 	
 	// Remove Last Element from LinkedList
+	public void removeLast() {
+		if(isEmpty()) {
+			throw new NoSuchElementException();
+		} if(first == last) {
+			first = last = null;
+		} else {
+			var previous = getPrevious(last);
+			last = previous;
+			last.next = null;
+		}
+		
+	}
+	
+	public void traverse(LinkedList list) {
+        Node n = list.first; 
+        if(n == null)System.out.println("No Elements in the List to travel..");
+        else {
+            while(n!=null) {
+                System.out.println(n.value+" ");
+                n = n.next;
+            }
+        }
+    }
 }
 
 public class CustomLinkedListDemo {
