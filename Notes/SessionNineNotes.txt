@@ -1,0 +1,63 @@
+
+Sorting Algorithms:
+
+	- Bubble Sort
+	- Selection Sort
+	- Insertion Sort
+	- Merge Sort
+	- Quick Sort
+	- Counting Sort
+	- Bucket Sort
+	
+------------------------------------
+
+Bubble Sort:
+
+			Best	Worst
+Passes		O(1)	O(n)
+Comparison	O(n)	O(n)
+Total		O(n)	O(n^2)			
+			Linear	Quadratic
+
+------------------------------------
+
+Selection Sort:
+
+				Best	Worst
+Passes			O(n)	O(n)
+Comparison		O(n)	O(n)
+Total			O(n^2)	O(n^2)
+			Quadratic	Quadratic	
+			
+------------------------------------
+
+Insertion Sort:
+
+				Best	Worst
+Iteration		O(n)	O(n)
+Shift Items		O(1)	O(n)
+Total			O(n)	O(n^2)
+				Linear	Quadratic
+				
+------------------------------------
+
+Merge Sort:
+
+				Best		Worst
+Dividing		O(log n)	O(log n)
+Merging			O(n)		O(n)
+Total 			O(n log n)	O(n log n)
+
+-----------------------------------
+
+Java Stream APIs:
+
+	java.util.stream;
+
+
+
+
+
+
+
+
