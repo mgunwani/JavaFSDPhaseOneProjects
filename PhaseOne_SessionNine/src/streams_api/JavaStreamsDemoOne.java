@@ -53,6 +53,5 @@ public class JavaStreamsDemoOne {
 				  .toArray(Integer[]::new);
 		  System.out.println(evenNumbersArray.toString());
 		  
-		
 	}
 }
